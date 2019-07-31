@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.second;
 
 import java.util.Arrays;
 
@@ -19,7 +19,6 @@ public class ExternalServiceInDocker implements CommandLineRunner {
             new Book("aaa"),
             new Book("bbb"),
             new Book("ccc")
-
         ));
     }
 

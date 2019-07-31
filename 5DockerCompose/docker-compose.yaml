@@ -9,19 +9,25 @@ services:
       - 80:80
 
   your_app_1:
-    image: mrudnicki123/amazon-demo:latest
+    image: app:latest
     container_name: your_app_1
+    environment:
+      - VERSION=1
     expose:
       - "8000"
 
   your_app_2:
-    image: mrudnicki123/amazon-demo:latest
+    image: app:latest
     container_name: your_app_2
+    environment:
+      - VERSION=2
     expose:
       - "8000"
 
   your_app_3:
-    image: mrudnicki123/amazon-demo:latest
+    image: app:latest
     container_name: your_app_3
+    environment:
+      - VERSION=3
     expose:
       - "8000"

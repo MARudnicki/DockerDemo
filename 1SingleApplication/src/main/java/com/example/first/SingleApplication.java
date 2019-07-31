@@ -1,7 +1,6 @@
-package com.example.DockerDemo;
+package com.example.first;
 
 import java.time.Instant;
-import java.time.format.DateTimeFormatter;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
@@ -12,14 +11,14 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @RestController
 @Slf4j
-public class DockerDemoApplication {
+public class SingleApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DockerDemoApplication.class, args);
+        SpringApplication.run(SingleApplication.class, args);
     }
 
-    @GetMapping("**")
-    String getHello() {
+    @GetMapping("/**")
+    public String getHello() {
         log.info("Hello called");
 
         return "Hello " + Instant.now();
