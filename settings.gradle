@@ -1,0 +1,4 @@
+rootProject.name = 'DockerDemo'
+
+include '1SingleApplication', '2ExternalServiceInDocker', '3CommunicationWithDocker', '4PublishingDocker', 
+        '5DockerCompose'
